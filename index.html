@@ -1,33 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Quiz Diverso</title>
-</head>
-<body>
-    <div class="container-quiz">
-        <h1>1.Qual é o maior planeta do sistema solar?</h1>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Quiz Diverso</title>
+    </head>
+    <body>
+        <div class="container-quiz">
+            <h1>Qual a capital do Brasil?</h1>
 
-        <label for="rsp1">
-            <input type="radio" name="resposta" id="rsp1" value="false"> A) Sol
-        </label>
-         <label for="rsp2">
-            <input type="radio" name="resposta" id="rsp2" value="true"> B) Jupiter
-        </label>
-         <label for="rsp3">
-            <input type="radio" name="resposta" id="rsp3" value="false"> C) Urano
-        </label>
-         <label for="rsp4">
-            <input type="radio" name="resposta" id="rsp4" value="false"> D) Plutão
-        </label>
+            <label for="rsp1">
+                <input type="radio" name="resposta" id="rsp1" value="false"> São Paulo
+            </label>
 
-        <input type="button" value="enviar" onclick="verificar">
-    </div>
-    
+            <label for="rsp2">
+                <input type="radio" name="resposta" id="rsp2" value="false"> Minas Gerais
+            </label>
 
-    
-</body>
-<script src="script.js"></script>
+            <label for="rsp3">
+                <input type="radio" name="resposta" id="rsp3" value="true"> Brasília
+            </label>
+
+            <label for="rsp4">
+                <input type="radio" name="resposta" id="rsp4" value="false"> Bahia
+            </label>
+
+            <input  class = "enviar" type="button" value="Enviar" onclick="verificar()">
+            <input class = "finalizar" onclick="finalizar()" type="button" value="Finalizar">
+        </div>
+    </body>
+    <script src="script.js"></script>
 </html>

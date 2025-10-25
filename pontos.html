@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="classcontainer"> 
+        <p> sua pontuação foi: </p>
+    </div>
+</body>
+    <script>
+        const pegarPontos = new URLSearchParams(window.location.search)
+        const pontos = pegarPontos.get("pt")
+
+        let div = document.getElementsByClassName("classcontainer")[0]
+
+        div.innerHTML = `<p>Parabéns, sua pontuação foi: ${pontos}</p>`
+
+    </script>
+    
+</html>
