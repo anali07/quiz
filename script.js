@@ -2,8 +2,8 @@ let points = 0
 let counter = 0
 
 let questions = [
-    ["Qual é o maior planeta do Sistema Solar?","Marte","Sol","Terra","Júpter"],
-    ["Qual o idioma mais falado no mundo?","Inglês","Japonês","Italiano","Portugês"],
+    ["Qual é o maior planeta do Sistema Solar?","Marte","Sol","Terra","Júpiter"],
+    ["Qual o idioma mais falado no mundo?","Inglês","Japonês","Italiano","Português"],
     ["Qual o maior órgão do corpo humano?", "Estômago","Olhos","Pele","Fêmur"],
     ["Qual destes instrumentos não é considerado de cordas?", "Piano","Trompete","Violino","Violão"]
 ]
@@ -54,6 +54,7 @@ function verificar() {
 }
 
 function finalizar() {
+
     window.location.href = `pontos.html?pt=${points}`
     
 }
